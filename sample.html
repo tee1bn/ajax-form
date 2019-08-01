@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+	<form id="sample-form" class="ajax_form" action="process_ajax_form.php"
+	 method="POST" data-function="after_submission" enctype="multipart/form-data">
+		<div>
+			<label>Email:</label>
+			<input type="" name="email" value="tee02bn@gmail.com">
+		</div>
+
+		<div>
+			<label>Name:</label>
+			<input type="" name="name" value="Ope-ifa Taiwo">
+		</div>
+
+		<div>
+			<label>Phone:</label>
+			<input type="" name="phone" value="+2348123351819">
+		</div>
+
+		<div>
+			<label>CV:</label>
+			<input type="file" name="cv">
+		</div>
+
+
+		<div>
+			<button type="submit" >Save</button>
+		</div>
+	</form>
+
+
+	<script>
+
+
+
+
+
+
+		after_submission =  function($response){
+			//we just log the response from the CGI script or server
+			console.log($response);
+		}
+	</script>
+
+	<!-- ajax form snippet  -->
+	<script type="text/javascript" src="src/ajax-form.js"></script>
+
+</body>
+</html>
