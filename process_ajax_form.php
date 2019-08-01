@@ -1,7 +1,7 @@
 <?php
 /*
  *This is where we process the form
- *we just repond with whaterver was sent
+ *we just respond with whatever was sent
  */
 	
 
